@@ -1,12 +1,13 @@
 package siege.gambling;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import siege.gambling.Utilities.VaultHook;
 
-public final class Gambling extends JavaPlugin {
+public final class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        System.out.println("hi");
+        (new VaultHook()).createHooks();
 
     }
 
