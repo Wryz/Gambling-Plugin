@@ -7,16 +7,16 @@ public final class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-<<<<<<< HEAD:src/main/java/siege/gambling/Core.java
-        (new VaultHook()).createHooks();
-=======
         // Plugin startup logic
->>>>>>> parent of 33b5b07... Plugin Setup v1.0:src/main/java/siege/gambling/Gambling.java
-
+        (new VaultHook()).createHooks();
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    public static Core getPlugin() {
+        return Core.getPlugin(Core.class); // Method to get the plugin from other classes, so you can use Core.plugin() in other classes to get the plugin
     }
 }

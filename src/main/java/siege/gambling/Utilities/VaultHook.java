@@ -4,8 +4,8 @@ package siege.gambling.Utilities;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
-import siege.gambling.Core;
 import org.bukkit.Bukkit;
+import siege.gambling.Core;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
 import static org.bukkit.Bukkit.getServer;
