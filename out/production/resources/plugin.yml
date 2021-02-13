@@ -1,6 +1,0 @@
-name: Gambling
-version: @version@
-main: siege.gambling.Gambling
-api-version: 1.16
-authors: [ Wrys ]
-description: Gamble items, experience or money with a variety of games.  

@@ -18,8 +18,8 @@ public class VaultHook {
 
     public void createHooks() {
         if (!setupEconomy()) {
-            Core.plugin().getLogger().severe("Vault was not found!");
-            getServer().getPluginManager().disablePlugin(Core.plugin());
+            Core.getPlugin().getLogger().severe("Vault was not found!");
+            getServer().getPluginManager().disablePlugin(Core.getPlugin());
             return;
         }
         setupPermissions();
