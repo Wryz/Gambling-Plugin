@@ -1,12 +1,10 @@
-package siege.gambling.Utilities;
+package Gambling.Utilities;
 
+import Gambling.Core;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
-import siege.gambling.Core;
-
-import java.util.regex.Matcher;
 
 public class Utils {
     static public String tacc(String str) {

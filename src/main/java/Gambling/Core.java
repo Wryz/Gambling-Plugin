@@ -1,7 +1,7 @@
-package siege.gambling;
+package Gambling;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import siege.gambling.Utilities.VaultHook;
+import Gambling.Utilities.VaultHook;
 
 public final class Core extends JavaPlugin {
 

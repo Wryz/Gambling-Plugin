@@ -1,9 +1,9 @@
-package siege.gambling.Games;
+package Gambling.Games;
 
-import siege.gambling.Core;
+import Gambling.Core;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import siege.gambling.Utilities.Utils;
+import Gambling.Utilities.Utils;
 
 import java.io.File;
 import java.io.InputStream;
