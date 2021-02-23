@@ -6,10 +6,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import Gambling.Utilities.Utils;
 
 import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 
-public class ToggleGamesConfig {
+public class GamesConfig {
     private final Core plugin;
     private final String prefix;
     private FileConfiguration settings;
@@ -20,7 +18,7 @@ public class ToggleGamesConfig {
     public boolean Cups;
     public boolean Dice;
 
-    public ToggleGamesConfig(Core plugin) {
+    public GamesConfig(Core plugin) {
         this.plugin = plugin;
         this.prefix = "&7[&2Siege&aGambling&7] "; //temp prefix used before lang.yml loads
         loadDefaultSettings();
@@ -37,13 +35,13 @@ public class ToggleGamesConfig {
         } else {
             settings = YamlConfiguration.loadConfiguration(configFile);
         }
-        matchConfig(settings, configFile);
+//        matchConfig(settings, configFile);
         loadSettings();
         Utils.sendColoredConsoleMsg(prefix + "&7config.yml &aloaded");
     }
 
     // Used to update config
-    @SuppressWarnings("ConstantConditions")
+/*    @SuppressWarnings("ConstantConditions")
     private void matchConfig(FileConfiguration config, File file) {
         try {
             boolean hasUpdated = false;
@@ -68,7 +66,7 @@ public class ToggleGamesConfig {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     private void loadSettings() {
         this.CoinFlip = settings.getBoolean("CoinFlip");
