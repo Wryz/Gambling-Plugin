@@ -7,6 +7,6 @@ public class InventoryClickEvents {
 
     @EventHandler
     public void clickEvent(InventoryClickEvent e) {
-        if(e.)
+        if(e.getInventory() == I'm testing this :))
     }
 }
