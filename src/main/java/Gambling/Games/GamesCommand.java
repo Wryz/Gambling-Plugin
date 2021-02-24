@@ -20,7 +20,7 @@ public class GamesCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
             Player player = (Player) sender;
-            player.openInventory(new GamesGUI(Core.getPlugin()).gameMenu(player));
+            player.openInventory(new GamesGUI().gameMenu(player));
         }
         return true;
     }

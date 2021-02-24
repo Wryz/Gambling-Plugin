@@ -7,6 +7,10 @@ public class InventoryClickEvents {
 
     @EventHandler
     public void clickEvent(InventoryClickEvent e) {
+<<<<<<< Updated upstream
         if(e.getInventory() == I'm testing this :))
+=======
+
+>>>>>>> Stashed changes
     }
 }
